@@ -1,0 +1,145 @@
+/* Escaping from overlapping of navbar and footer on content of the pages*/
+
+body{ 
+  padding-top: 55px; 
+  padding-bottom: -20px; 
+  background: rgb(220,220,220);
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+/*Navbar*/
+
+.navbar a{
+  font-size: 14pt;
+}
+
+.navbar a:hover{
+  color: #22e639 !important;
+}
+
+.img-logo{
+  height: 55px;
+}
+
+.navbar p{
+  font-size: 12pt;
+  color: #9d9d9d;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* footer*/
+footer {
+  background-color: #222;
+  border-color: #080808;  
+  position: fixed;
+  height: 55px;
+  bottom: 0;
+  width: 100%;
+}
+.img-social{
+  height: 20px;
+}
+
+footer a:hover{
+  color: #22e639 !important;
+}
+
+footer p{
+  font-size: 10pt;
+  color: #9d9d9d;
+
+  
+}
+.footer-left{
+  margin-left: 20px;
+  float: left;
+}
+
+.footer-right{
+  margin-right: 20px;
+  margin-top: 15px;
+  float: right;
+  font-color: #9d9d9d;
+}
+
+
+/*Carousel*/
+
+.slide-holder{
+  background: black;
+  overflow: hidden;
+}
+.img-slider{
+  height: auto; 
+  object-fit: cover;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Styling pages content*/
+.page-title{
+  text-align: center;
+}
+
+.content-text{
+  font-size: 14pt; 
+  text-align: justify;
+}
+
+
+.img-content{
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:37%;
+    width:100%;
+    position:absolute;
+}
+
+.margin-fixed {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .map-responsive {
+      display: block;
+      /*height: 100%;*/
+  }
+   .footer-text, .navbar-right, .navbar-left{
+      text-align: center;
+  }
+
+}
+
+
